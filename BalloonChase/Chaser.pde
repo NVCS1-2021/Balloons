@@ -26,7 +26,15 @@ public class Chaser {
   }
   
   private Balloon target(Balloon[] balloons) {
+    //2.a.1 variable for answer
+    Balloon bigBalloon = balloons[0];
+    //2.a.2 variable for size
     
+    //2.b. traverse array with for loop
+    
+      //2.c. if statement to maybe change variables
+      
+    //2.d. return answer  
     return balloons[0];
   }
   
