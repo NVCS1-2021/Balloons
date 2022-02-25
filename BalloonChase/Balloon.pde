@@ -1,6 +1,6 @@
 public class Balloon {
   public PVector pos, vel, acc;
-  public int size;
+  private  int size;
   public float MAX_SPEED = 5.0;
   
   public Balloon() {
@@ -21,5 +21,9 @@ public class Balloon {
   public void draw() {
     fill(255,0,0);
     circle(pos.x,pos.y,size);
+  }
+  
+  public int getSize() {
+   return size; 
   }
 }

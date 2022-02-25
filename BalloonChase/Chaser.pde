@@ -26,8 +26,16 @@ public class Chaser {
   }
   
   private Balloon target(Balloon[] balloons) {
-    
-    return balloons[0];
+    int balloonOfPriority = 0;
+    int index = 0;
+    for (int i = 0; i < balloons.length; i++){
+     if (balloonOfPriority < balloons[i].getSize()){
+       System.out.println(balloons[i].getSize());
+       balloonOfPriority = balloons[i].getSize();
+       index = i;
+     }
+    }
+    return balloons[index];
   }
   
   public void draw() {
