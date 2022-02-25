@@ -16,7 +16,6 @@ public class Chaser {
   
   public void chase(Balloon[] bs) {
     Balloon targetBalloon = target(bs);
-    
     PVector perfectVel = PVector
       .sub(targetBalloon.pos,pos)
       .limit(MAX_SPEED);

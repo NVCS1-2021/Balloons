@@ -1,7 +1,8 @@
 public class Balloon {
   public PVector pos, vel, acc;
   public int size;
-  public float MAX_SPEED = 5.0;
+  public float MAX_SPEED = 2.0;
+  public boolean active = true;
   
   public Balloon() {
     size = (int) random(3,15);
